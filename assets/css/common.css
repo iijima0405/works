@@ -1,0 +1,608 @@
+@charset"utf-8";
+
+/* color:#F0E6BC #DBCD1D #A6B729*/
+
+/* ---------------フェードイン--------------- */
+.element {
+    /* 最初は非表示 */
+    transform: translateY(120px);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 1.5s, opacity 1.5s, visibility 1.5s;
+  }
+  /* フェードイン時に入るクラス */
+  
+  .is-fadein {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+/* ---------------------------------------------- */
+
+
+body{
+    background-color: #F0E6BC;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-weight: 700;
+    width: 1260px;
+}
+
+body,ul,p,h1,h2,h3{
+    padding: 0;
+    margin: 0 ;
+    list-style: none;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.d_f{
+    display: flex;
+}
+.jc_s{
+    justify-content: space-between;
+}
+
+.ex_br{
+    display: none;
+}
+   
+
+.inner{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main section,main article{
+    border-bottom: 1px solid #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --------------header------------- */
+header{
+    display: flex;
+    width: 100%;
+    height: 110px;
+    background:rgb(166,183,42);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 3;
+}
+
+header .h_logo{
+    position: relative;
+    background-image: url(../images/common/logo.png);
+    height: 110px;
+    width: 225px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 55px;
+    font-size: 20px;
+    text-align: center;    
+    transition: 0.5s;
+    margin-top: 4px;
+    margin-left: 30px;
+}
+
+header .h_logo a{
+    width: 225px;
+    color: transparent;
+}
+
+header .h_logo:hover{
+    background-image: url(../images/common/logo_h.png);
+    height: 110px;
+    width: 225px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 55px;
+    font-size: 20px;
+    text-align: center;    
+}
+    
+header .h_logo::after{
+    content:"";
+    display:block;
+    width:993px;
+    height:1.5px;
+    background-color:black;
+    position:absolute;
+    top: 45.5px;
+    left: 208px;}
+
+    header>p{
+        display: none;
+    }
+
+header .h_nav>ul{
+    width: 975px;
+    margin-top: 20px;
+    padding-left: 50px;
+    position: relative;
+}
+
+header .h_nav ul>li{
+    margin-left: 80px;
+}
+
+header .h_nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: 0.5s;}
+
+
+    header .h_nav ul li a:hover{
+    color: #F0E6BC;
+}
+header .fat-nav{
+    display: none;
+}
+
+
+/* ----------------ハンバーガーメニュー---------------- */
+
+header button{
+    display: none;
+    background-image: url(../images/common/ham_open.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: transparent;
+    height: 30%;
+    width: 20%;
+    background-color: transparent;
+    border: none;
+
+}
+
+#ham_nav{
+    display: none;
+	position:fixed;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background:rgba(0, 0, 0, 0.9)
+}
+
+#ham_nav button{
+    background-image: url(../images/common/ham_close.png);
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    height: 5%;
+    width: 15%;
+}
+
+#ham_nav ul{
+    margin-top: 20%;
+    text-align: center;
+}
+
+#ham_nav ul li{
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+#ham_nav ul li a{
+    text-decoration: none;
+    color: rgba(219,205,29,0.8);
+}
+
+
+/* ----------------navコピペ---------------- */
+
+/* header .h_nav ul li:first-child{
+    color: #F0E6BC;
+}
+
+header .h_nav ul li:first-child::before{
+  content: '';
+  display: inline-block;
+  width: 60px;  
+  height: 60px;
+  background-image: url(../images/common/nav_fam_first.png);
+  background-size: contain;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  
+}
+header .h_nav ul li:first-child::after{
+    content: '';
+    display: inline-block;
+    width: 60px;  
+    height: 60px;
+    background-image: url(../images/common/nav_fam_last.png);
+    background-size: contain;
+    vertical-align: top;
+    background-repeat: no-repeat;
+   margin-left: 10px;
+    position: absolute;
+} */
+
+/* ------------------------------------ */
+
+
+
+/* ------------mainvisual------------ */
+.mainvisual{
+    position: relative;
+    top:130px;
+    width: 1260px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mainvisual .mainv_title{
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(219,205,29,0.6); 
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 550px;
+  height: 125px;
+  z-index: 1;
+}
+
+.mainvisual .mainv_title h1:first-child{
+    border-bottom: black 1px solid;
+}
+.mainvisual .mainv_title h1{
+    text-align: center;
+}
+
+
+main,footer{
+    position: relative;
+    top:130px;
+}
+
+/* -------------button------------- */
+
+.button a{
+    color: transparent;
+    background-image: url(../images/top/reserve_button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+      position: fixed;
+      z-index: 2;
+      top:140px;
+      right:0;
+      width: 135px;
+      height: 135px;
+      transition: 0.5s;
+  }
+  .button a:hover{
+    background-image: url(../images/top/h_reserve_button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+      position: fixed;
+      z-index: 2;
+      top:150px;
+      right:0;
+      width: 150px;
+      height: 150px;
+  }
+
+
+/* ---------------main--------------- */
+
+
+main .careful ul{
+    list-style-type: square;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+/* --------------footer-------------- */
+
+
+footer{
+background-image: url(../images/common/footer_bg.png);
+background-repeat: no-repeat;
+background-size: 100%;
+padding-top: 150px;
+padding-left: 30px;
+position: relative;
+margin-top: 100px;
+}
+
+footer .f_title{
+    margin-right: 60px;
+}
+
+footer .f_title p{
+    line-height: 30px;
+}
+
+footer .f_title::after{
+    content:"";
+    display:block;
+    width:975px;
+    height:1.5px;
+    background-color:black;
+    position:absolute;
+    bottom: 89px;
+    left:259px;
+    
+}
+
+
+footer address{
+    font-size: 15px;
+    font-style: normal;
+    text-align: right;
+    letter-spacing: 0.05em;
+    line-height: 30px;
+}
+
+footer .f_title .f_logo{
+    margin-top: 30px;
+}
+footer iframe{
+    position: absolute;
+    margin-top: 27px;
+    margin-left: 310px;
+}
+
+footer .f_nav{
+    margin-left: 270px;
+}
+
+footer .f_nav::after{
+    content: url(../images/common/footer_fam.png);
+    position: absolute;
+    bottom: 45px;
+    right: 115px;
+}
+
+footer .f_nav ul{
+width: 610px;
+}
+
+footer .f_nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    transition: 0.5s;}
+
+footer .f_nav ul li a:hover{
+    color: #F0E6BC;
+}
+
+
+/* 
+footer .f_title .f_logo p{
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .f_title .f_logo p:after{
+    border-top: 1px solid black;
+    content: "";
+    width: 20px; 
+} */
+
+footer .f_title .f_logo{
+text-align: center;
+}
+
+
+/* -------------------------レスポンシブ------------------------- */
+
+@media screen and (max-width:640px){
+
+    .inner{
+        width:100%;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+    main section,main article{
+        border-bottom: 1px solid #000;
+    }
+    
+
+     img{max-width: 100%;
+         height: auto;
+        }
+
+        h2{
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+     body,.mainvisual,.mainvisual .mainv_title{
+        width:auto;
+     }
+
+     .d_f{
+        display: block;
+        flex-direction: column;
+     }
+     
+      header .h_nav, .button, footer .f_nav,
+      footer .f_nav::after,footer .f_title::after{
+        display: none;
+     }
+
+     .sp_br{
+        display: none;
+      }
+     .ex_br{
+         display: block;
+     }
+        
+    
+/* --------------------header-------------------- */
+header{
+    opacity: 0.7;
+    height: 10%;
+    text-align: left;
+    padding-right: auto;
+    padding-left: auto;
+    justify-content: space-around;
+}
+
+header .h_logo{
+    background-image: url(../images/common/logo.png);
+    height: 30%;
+    width: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: auto;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.5s;
+    margin-left: 0;
+}
+
+header .h_logo a{
+    display: none;
+}
+
+header .h_logo:hover{
+    display: none;
+}
+
+header .h_logo::after{
+    content:"";
+    display:block;
+    width:100%;
+    height:1px;
+    background-color:black;
+    position:absolute;
+    top: 40%;
+    left: 100%;
+}
+
+header>p{
+    display: block;
+    font-size: 5px;
+    margin-top: 50px;
+} 
+
+header .fat-nav{
+    display: block;
+}
+
+
+/* ----------------ハンバーガーメニュー---------------- */
+
+/* ------メニュー表示時、非表示------ */
+header button{
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+}
+
+
+#ham_nav{
+    display: block;
+} 
+
+
+
+
+/* ------------------mainvisual------------------ */
+
+.mainvisual{
+    position:relative;
+    top:90px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 1000%;
+}
+
+
+
+
+/* --------------------footer-------------------- */
+footer{
+    background-color:rgb(166,183,42);
+    opacity: 0.7;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-top: 0;
+    }
+
+    footer .f_title{
+        margin-left: 5%;
+    }
+
+footer .f_title{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+footer .f_title>p{
+    font-size: 12px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer .f_title .f_logo{
+    width: 100%;
+}
+
+footer address{
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+footer iframe{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 300px;
+    }
+
+
+
+      footer::before {
+        height: 80px;
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: -67px;
+        background: 
+        linear-gradient(30deg, rgb(166,183,42) 50px, transparent 0), 
+        linear-gradient(330deg,rgb(166,183,42) 50px, transparent 0);
+        background-size: 200px 70px;
+      }
+
+
+}

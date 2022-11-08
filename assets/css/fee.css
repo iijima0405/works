@@ -1,0 +1,209 @@
+@charset"utf-8";
+
+header .h_nav ul li:nth-child(2){
+    color: #F0E6BC;
+}
+
+header .h_nav ul li:nth-child(2):before{
+  content: '';
+  display: inline-block;
+  width: 60px;  
+  height: 60px;
+  background-image: url(../images/common/nav_fam_first.png);
+  background-size: contain;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  left:220px;
+}
+
+header .h_nav ul li:nth-child(2)::after{
+    content: '';
+    display: inline-block;
+    width: 60px;  
+    height: 60px;
+    background-image: url(../images/common/nav_fam_last.png);
+    background-size: contain;
+    vertical-align: top;
+    background-repeat: no-repeat;
+   margin-left: 10px;
+    position: absolute;
+} 
+
+main section h3{
+  text-align: center;
+}
+
+main h2{
+  margin: 20px auto;
+}
+
+
+
+main .fee .stay_fee,main .fee .service_fee{
+  background: rgba(219,205,29,0.5);
+  padding-top: 10px;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto 30px;
+  width: 900px;
+
+}
+
+main .fee .fee_item .box{
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  height: 150px;
+  background-color: #fff;
+  opacity: 0.7;
+  border-radius: 10px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+main .fee .fee_item .box:first-child{
+height: 200px;
+}
+
+main .fee{
+  background-image: url(../images/fee/fee_fam.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 50px;
+}
+
+/* -----------------------料金表----------------------- */
+table{
+  margin: 20px auto ;
+  text-align: center;
+  width: 90%;
+}
+
+table tr{
+  height:50px;
+}
+
+table tr th:first-child{
+width: 33%;
+}
+
+table,td,th{
+border: 1px black solid;
+}
+
+main .fee .service_fee .service_fee_table .half_table tr th{
+width: 50%;
+}
+
+/* ----------------------レンタル品---------------------- */
+main .fee .service_fee{
+  margin-bottom: 100px;
+}
+
+
+main .fee .service_fee .service_fee_table{
+background-color: #fff;
+opacity: 0.7;
+border-radius: 10px;
+padding: 20px 0;
+width: 750px;
+margin-right: auto;
+margin-left: auto;
+}
+
+
+
+
+/* ----------------------careful---------------------- */
+main .careful{
+  background-image: url(../images/fee/care_fam.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+
+main .careful ul{
+  padding: 20px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+  background: rgba(219,205,29,0.5);
+  border-radius: 20px;
+  width: 700px;
+ 
+}
+
+
+@media screen and (max-width:640px){
+  
+main .fee .stay_fee,main .fee .service_fee{
+  width: 100%;
+}
+
+
+main .fee .fee_item .box{
+  width: 90%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+main .fee .fee_item .box:first-child{
+  height: auto;
+  }
+
+/* -----------------宿泊料金----------------- */
+  
+  main .fee .stay_fee .fee_item .box table tr th:first-child{
+    width:30%;
+  }
+
+  main .fee .stay_fee .fee_item .box table tr th:nth-child(2){
+   width: 15%;}
+
+
+   main .fee .stay_fee .fee_item .box table tr th:nth-child(3){
+     width:10%;
+   }
+  
+  main .fee .stay_fee .fee_item .box table tr th{
+    font-size: 8px;
+  }
+ 
+  main .fee .stay_fee .fee_item .box table tr td{ 
+    font-size: 10px;
+  }
+
+
+/* ----------------レンタル品---------------- */
+
+
+main .fee .service_fee .service_fee_table{
+  width: 90%;
+  }
+
+  main .fee .service_fee .service_fee_table tr th{
+    font-size: 10px;
+  }
+
+  main .fee .service_fee .service_fee_table tr td{
+    font-size: 13px;
+  }
+
+/* ----------------------careful---------------------- */
+
+main .careful{
+background-size: 40% 15%;
+}
+
+main .careful ul{
+  padding: 20px;
+  border-radius: 20px;
+  width: 80%;
+  font-size: 12px;
+  margin-bottom: 100px;
+}
+
+}

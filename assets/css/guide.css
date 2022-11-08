@@ -1,0 +1,335 @@
+@charset"utf-8";
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* header */
+header .h_nav ul li:first-child{
+    color: #F0E6BC;
+}
+
+header .h_nav ul li:first-child::before{
+  content: '';
+  display: inline-block;
+  width: 60px;  
+  height: 60px;
+  background-image: url(../images/common/nav_fam_first.png);
+  background-size: contain;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  left:75px;
+  
+}
+header .h_nav ul li:first-child::after{
+    content: '';
+    display: inline-block;
+    width: 60px;  
+    height: 60px;
+    background-image: url(../images/common/nav_fam_last.png);
+    background-size: contain;
+    vertical-align: top;
+    background-repeat: no-repeat;
+   margin-left: 10px;
+    position: absolute;
+}
+
+/* header .h_nav ul li:first-child::before,header .h_nav ul li:first-child::after{
+    position: absolute;
+} */
+
+/* main */
+
+main .guide_map{
+    background-image: url(../images/guide/guide_fam.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 9% 10%;
+    
+}
+
+main .guide_map .map{
+    background: rgba(219,205,29,0.5);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+
+main .guide_map p{
+    width: 70%;
+    height: 60%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+/* -----------------------introduce----------------------- */
+
+main .introduce{
+    /* height: 1100px; */
+    background-image: url(../images/guide/tent_fam.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    /* background-size: 9% 10%; */
+} 
+
+main .stay_area,main .facility_area{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+/* ----------------宿泊施設----------------- */
+
+main .stay_area .area_item{
+    background: rgba(219,205,29,0.5);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+main .introduce .stay_area .area_item .link_fee{
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+main .stay_area .area_item a{
+    color: black;
+    font-size: 20px;
+}
+
+main .stay_area .area_item a:hover{
+    color:blue;
+}
+
+
+main .introduce .stay_area .area_item .area_box{
+height: 200px;
+background-color: #fff;
+opacity: 0.7;
+width: 700px;
+margin: 10px auto;
+justify-content:space-around;
+border-radius: 5px;
+}
+
+
+main .introduce .stay_area .area_item .area_box img{
+    text-align: center;
+    margin-top: 10px;
+    height: 90%;
+    width: 28%;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+main .introduce .stay_area .area_item .area_box .area_text{
+    margin-top: 10px;
+    width: 60%;
+}
+
+main .introduce .stay_area .area_item .area_box .area_text p{
+    font-size: 13px;
+    line-height: 23px;
+}
+
+
+main .introduce .stay_area .area_item .area_box .area_text .text_ex{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* ---------------利用可能施設--------------- */
+
+main .facility_area{
+    /* height: 350px; */
+    margin-bottom: 200px;
+}
+
+main .facility_area .item{
+    display: flex;
+    height: 300px;
+    padding-top: 15px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    background: rgba(219,205,29,0.5);
+    border-radius: 20px;
+    justify-content: space-around;
+}
+
+main .facility_area .item .item_box{
+    text-align: center;
+    background-color: #fff;
+    opacity: 0.7;
+    width: 31%;
+    height: 45%;
+    border-radius: 15px;
+}
+
+main .facility_area .item .item_box img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 28%;
+    height: 60%;
+
+margin-right: auto;
+margin-left: auto;
+}
+
+/* -------------------注意事項------------------- */
+
+main .careful{
+    /* height: 500px; */
+    background-image: url(../images/guide/care_fam.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+main .careful ul{
+    padding: 20px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    background: rgba(219,205,29,0.5);
+    border-radius: 20px;
+    width: 700px;
+
+}
+
+
+
+/* -------------------------レスポンシブ------------------------- */
+
+@media screen and (max-width:640px){
+
+/* -----------------------width----------------------- */
+main .stay_area,main .facility_area
+{
+    width: auto;
+}
+
+main .introduce .stay_area .area_item .area_box{
+    width:90%;
+}
+
+main .careful ul{
+    width: auto;
+}
+
+main .guide_map{
+    background-image: url(../images/guide/guide_fam.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 20%;
+}
+
+main .guide_map .map p{
+    width: 90%;
+}
+
+main .stay_area .area_item{
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+/* ----------------宿泊施設----------------- */
+
+main .introduce{
+    background-size: 30%;
+}
+
+main .introduce .stay_area .area_item .area_box{
+    height: 350px;
+    padding-top: 0;
+    }
+
+    main .introduce .stay_area .area_item .area_box h3{
+        text-align:center
+    }
+
+main .introduce .stay_area .area_item .area_box img{
+    height: 50%;
+    width: 100%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    border: none;
+    }
+
+
+main .introduce .stay_area .area_item .area_box .area_text{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .introduce .stay_area .area_item .area_box .area_text p{
+    font-size: 11px;
+    line-height: 15px;
+}
+
+
+main .introduce .stay_area .area_item .area_box .area_text .text_ex{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+main .introduce .stay_area .area_item .link_fee{
+    text-align: center;
+    padding-right: 0;
+}
+
+/* ---------------利用可能施設--------------- */
+main .facility_area{
+    /* height: 350px; */
+    margin-bottom: 100px;
+}
+
+
+main .facility_area .item .item_box{
+    text-align: center;
+    background-color: #fff;
+    opacity: 0.7;
+    width: 45%;
+    height: 30%;
+    border-radius: 15px;
+}
+
+main .facility_area .item .item_box img{
+    width: 45%;
+    height: 60%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+main .facility_area .item .item_box p{
+    font-size: 13px;
+}
+
+/* -------------------注意事項------------------- */
+
+main .careful{
+    background-size: 30%;
+}
+
+
+main .careful ul{
+    margin-bottom: 100px;
+    padding: 10px 20px;
+    font-size: 10px;
+}
+
+
+}

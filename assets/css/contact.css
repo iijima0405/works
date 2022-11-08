@@ -1,0 +1,146 @@
+@charset"utf-8";
+
+.mainvisual .mainv_title h1{
+    text-align: center;
+}
+
+header .h_nav ul li:last-child{
+    color: #F0E6BC;
+}
+
+header .h_nav ul li:last-child::before{
+  content: '';
+  display: inline-block;
+  width: 60px;  
+  height: 60px;
+  background-image: url(../images/common/nav_fam_first.png);
+  background-size: contain;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  left:750px;
+  
+}
+header .h_nav ul li:last-child::after{
+    content: '';
+    display: inline-block;
+    width: 60px;  
+    height: 60px;
+    background-image: url(../images/common/nav_fam_last.png);
+    background-size: contain;
+    vertical-align: top;
+    background-repeat: no-repeat;
+   margin-left: 10px;
+    position: absolute;
+}
+
+/* header .h_nav ul li:first-child::before,header .h_nav ul li:first-child::after{
+    position: absolute;
+} */
+
+
+main form{
+    margin-top: 50px;
+    background-color:  rgba(219,205,29,0.5);
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+  border-radius: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.error{
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+    margin: 10px 0 0;
+  }
+
+form .form_box{
+    /* display: block; */
+    width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 68px;
+}
+
+.form_box div:first-child{
+  width: 235px;
+  display: flex;
+  line-height: 40px;
+  text-align: left;
+}
+
+
+
+form input,textarea{
+    width:454px;
+    border-radius:10px ;
+    border:none;
+    height: 56px;
+
+}
+
+textarea{
+    height: 320px;
+    resize: none;
+}
+
+main form .check_button{
+    text-align: center;
+}
+
+main form .check{
+    height: 77px;
+    line-height: 77px;
+    background:rgba(166,183,42,0.7);
+    font-size: 23px;
+    font-family:  '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    color:#f0e1a6;
+    transition: 0.7s;
+}
+
+main form .check:hover{
+    background:rgb(148, 163, 36);
+    cursor : pointer;
+}
+
+.f_item{
+    flex-basis: auto;
+}
+    
+.hissu{
+    flex-basis: 62px;
+}
+
+
+/* -------------------レスポンシブ------------------- */
+
+@media screen and (max-width: 640px){
+
+/* ----------------------width---------------------- */
+main form{
+  width: 90%;
+  text-align: center;
+}
+
+form .form_box{
+    width: 90%;
+    margin-bottom: 10px;
+}
+form input,textarea{
+    width:100%;
+}
+
+/* ------------------------------------------- */
+form input{
+    height: 40px;
+}
+form textarea{
+    height: 300px;
+}
+
+}

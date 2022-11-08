@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <link rel="icon" href="../favicon.ico">
+    <title>お問い合わせ</title>
+</head>
+
+<body>
+    <header>
+        <div class="h_logo">
+            <a href="../index.html">TOMOSHIBIGARDEN<br>TATEYAMA</a>
+        </div>
+        <p>ＣＯＮＴＡＣＴ</p>
+        <div class="h_nav">
+            <ul class="d_f">
+                <li><a href="../guide/index.html">場内案内</a></li>
+                <li><a href="../fee/index.html">ご利用料金</a></li>
+                <li><a href="../rental/index.html">レンタル・物販案内</a></li>
+                <li><a href="../access/index.html">アクセス</a></li>
+                <li>お問合せ</li>
+            </ul>
+        </div>
+
+        <!--ハンバーガーフルスクリーン（レスポンス時表示）-->
+        <button id="open">
+            button
+        </button>
+        <div id="ham_nav">
+            <button id="close">
+                button
+            </button>
+            <ul>
+                <li><a href="../index.html">TOPページ</a></li>
+                <li><a href="../guide/index.html">場内案内</a></li>
+                <li><a href="../fee/index.html">ご利用料金</a></li>
+                <li><a href="../rental/index.html">レンタル・物販案内</a></li>
+                <li><a href="../access/index.html">アクセス</a></li>
+                <li><a href="../contact/index.html">お問合せ</a></li>
+                <li><a href="https://www.nap-camp.com/">ご予約</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="mainvisual">
+        <div class="mainv_title">
+            <h1>お問い合せ</h1>
+            <h1>CONTACT</h1>
+        </div>
+        <ul class="d_f">
+            <li><img src="../assets/images/top/night_camp.jpg" alt="夜のキャンプ場" width="1260" height="750"></li>
+
+        </ul>
+    </div>
+
+    <div class="button">
+        <a href="https://www.nap-camp.com/" target="_blank">ご予約は<br>こちら！</a>
+    </div>
+
+    <main class="inner">
+
+        <!--お問い合わせフォーム-->
+        <form class="element" action="form.php" method="post">
+
+            <div class="form_box d_f jc_s">
+                <h3>お名前</h3>
+                <div>
+                    <p><input type="text" name="user_name" class="required"></p>
+                    <p>必須</p>
+                </div>
+            </div>
+
+
+            <div class="form_box d_f jc_s">
+                <h3>ふりがな</h3>
+                <div>
+                    <p><input type="text" name="user_furigana" class="required"></p>
+                    <p>必須</p>
+                </div>
+            </div>
+
+            <div class="form_box d_f jc_s">
+                <h3>メールアドレス</h3>
+                <div>
+                    <p><input type="email" name="user_email" class="required"></p>
+                    <p>必須</p>
+                </div>
+            </div>
+
+
+            <div class="form_box d_f jc_s">
+                <h3>お問い合わせ内容</h3>
+                <div>
+                    <p><textarea name="message" class="required"></textarea></p>
+                    <p>必須</p>
+                </div>
+            </div>
+
+            <div class="check_button">
+                <p>
+                    <input class="check" type="submit" value="入力確認画面へ">
+                </p>
+            </div>
+
+        </form>
+
+
+
+    </main>
+
+    <!-- footer -->
+    <footer class="d_f">
+        <div class="f_title">
+            <address>ADDRESS：〒２９４－０３０７<br>
+                千葉県館山市波左間１００</address>
+            <p>TEL：０４７－０００－００００</p>
+            <div class="f_logo">
+                <h3><img src="../assets/images/common/logo.png" alt="logo" width="225" height="110"></h3>
+                <p>ともしびガーデンたてやま</p>
+            </div>
+        </div>
+
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26157.56448791781!2d139.77520216268923!3d34.96423838019934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6017f753a573db23%3A0xbbffa22aea9318fd!2z5Y2D6JGJ55yM6aSo5bGx5biC!5e0!3m2!1sja!2sjp!4v1666143902271!5m2!1sja!2sjp"
+            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="f_nav">
+            <ul class="d_f jc_s">
+                <li><a href="../guide/index.html">場内案内</a></li>
+                <li><a href="../fee/index.html">ご利用料金</a></li>
+                <li><a href="../rental/index.html">レンタル・物販案内</a></li>
+                <li><a href="../access/index.html">アクセス</a></li>
+                <li><a href="../contact/index.html">お問合せ</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script src="../assets/js/jquery-2.1.4.min.js"></script>
+
+    <!-- ハンバーガーボタン -->
+    <script src="../assets/js/common.js"></script>
+
+</body>
+
+</html>

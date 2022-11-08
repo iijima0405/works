@@ -1,0 +1,387 @@
+@charset"utf-8";
+
+h2{
+  margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* -------------------header------------------- */
+
+header .h_nav ul li:nth-child(3){
+    color: #F0E6BC;
+}
+
+header .h_nav ul li:nth-child(3):before{
+  content: '';
+  display: inline-block;
+  width: 60px;  
+  height: 60px;
+  background-image: url(../images/common/nav_fam_first.png);
+  background-size: contain;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 380px;
+}
+
+header .h_nav ul li:nth-child(3)::after{
+    content: '';
+    display: inline-block;
+    width: 60px;  
+    height: 60px;
+    background-image: url(../images/common/nav_fam_last.png);
+    background-size: contain;
+    vertical-align: top;
+    background-repeat: no-repeat;
+   margin-left: 10px;
+    position: absolute;
+} 
+
+header>p{
+  line-height: 17px;
+}
+
+/* ------------------mainvisual------------------ */
+/* .mainvisual .mainv_title h1:first-child{
+  letter-spacing: 0.02em;
+} */
+.mainvisual .mainv_title h1:last-child{
+  letter-spacing: 0.5rem;
+}
+
+
+/* ---------------------main--------------------- */
+
+main .explain{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .explain .red span{
+  color: red;
+}
+
+main .rental{
+  background-image: url(../images/rental/cook_fam.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 50px;
+}
+
+/* ------------------共通------------------ */
+main .rental .rental_item,main .sale .sale_item{
+background-color:  rgba(219,205,29,0.5);
+width: 900px;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 150px;
+border-radius: 30px;
+padding-bottom: 10px;
+padding-top: 20px;
+}
+
+main .rental .rental_item h3,main .sale .sale_item h3{
+  text-align: center;
+  margin: 20px auto;
+  font-size: 25px;
+}
+
+
+
+/* -------------------rental------------------- */
+
+/* ------------rental詳細共通------------ */
+main .rental .rental_item .box{
+  background-color: #fff;
+  opacity: 0.7;
+border-radius: 10px;
+text-align: center;
+}
+
+main .rental .rental_item .box img{
+  height: 75%;
+  width: 80%;
+  border: 1px solid black;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+} 
+
+main .rental .rental_item .box .text{
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1%;
+}
+
+main .rental .rental_item>div{
+margin-right: auto;
+margin-left: auto;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+/* ---------------------個別指定--------------------- */
+
+/* -------------tent------------- */
+main .rental .rental_item .tent{
+  height: 300px;
+  /* width: 700px; */
+}
+
+main .rental .rental_item .tent .tent_box{
+  width: 40%;
+  height: 100%;
+}
+
+main .rental .rental_item .tent .tent_box p{
+  font-size: 15px;
+  line-height: 20px;
+}
+/* -------------gear------------- */
+main .rental .rental_item .gear,main .sale .sale_item{
+  display: flex;
+}
+
+main .rental .rental_item .gear{
+  height: 500px;
+}
+
+main .rental .rental_item .gear .gear_box{
+  width: 30%;
+  height: 45%;
+}
+
+/* --------------cook------------- */
+main .rental .rental_item .cook{
+  height: 300px;
+}
+
+main .rental .rental_item .cook .cook_box{
+  width: 30%;
+  height: 100%;
+}
+/* ------------bedding------------ */
+main .rental .rental_item .bedding{
+  height: 300px;
+}
+
+main .rental .rental_item .bedding .bedding_box{
+  width: 30%;
+  height: 100%;
+}
+
+main .rental .rental_item .link_fee{
+  margin-top: 20px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+/* ----------------------------------------- */
+
+main .rental .rental_item .link_fee a{
+  color: black;
+  font-size: 25px}
+
+  
+  main .rental .rental_item .link_fee a:hover{
+  color:blue;
+}
+
+/* --------------------sale-------------------- */
+
+main .sale{
+  background-image: url(../images/rental/sale_fam.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 140px 120px;
+}
+
+
+
+/* ------------sale詳細共通------------ */
+main .sale .sale_item .box{
+  background-color: #fff;
+  opacity: 0.7;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  height: 45%;
+}
+
+main .sale .sale_item .box img{
+  height: 70%;
+  width: 80%;
+  border: 1px solid black;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+} 
+
+main .sale .sale_item{
+margin-right: auto;
+margin-left: auto;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+
+main .sale .sale_item{
+  width: 900px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .sale .sale_item .box p{
+font-size: 15px;
+line-height: 15px;
+}
+
+
+main .sale_item .box .text{
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1%;
+  font-size: 13px;
+}
+
+main .sale_item .box .text span{
+  font-size: 10px;
+  line-height: 5px;
+}
+
+
+@media screen and (max-width:640px){
+
+main .explain p{
+  font-size: 13px;
+  line-height: 1.5rem;
+}
+
+/* --------------------------width-------------------------- */
+
+  main .explain,main .rental .rental_item,main .sale .sale_item{
+    width: 90%;
+  }
+  
+  main .sale .sale_item .fuel,main .sale .sale_item .food{
+    width: 80%;
+  }
+
+/* ------------------共通------------------ */
+
+
+main .rental .rental_item .box,main .sale .sale_item .box{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .rental .rental_item{
+  padding-bottom: 30px;
+}
+
+main .rental .rental_item .box{
+padding-top: 5px;
+margin-bottom: 15px;
+}
+
+main .rental .rental_item .box p{
+  font-size: 12px;
+}
+
+main .rental .rental_item .box img{
+  height: 70%;
+  width: 60%;
+} 
+
+/* ------------------width------------------ */
+main .rental .rental_item .tent .tent_box,
+main .rental .rental_item .cook .cook_box,
+main .rental .rental_item .bedding .bedding_box{
+  width: 80%;
+}
+
+
+  /* ---------------------個別指定--------------------- */
+
+/* --------------------rental-------------------- */
+  
+
+/* -------------tent------------- */
+main .rental .rental_item .tent_box img{
+  height: 65%;
+} 
+
+main .rental .rental_item .tent{
+  height: auto;
+  /* width: 700px; */
+}
+
+main .rental .rental_item .tent .tent_box{
+  height: 250px;
+}
+/* -------------gear------------- */
+
+main .rental .rental_item .gear{
+  height: auto;
+}
+
+main .rental .rental_item .gear .gear_box{
+  width: 45%;
+  height: 120px;
+}
+
+
+/* --------------cook------------- */
+main .rental .rental_item .cook{
+  height: auto;
+}
+
+main .rental .rental_item .cook .cook_box{
+  height: 180px;
+}
+/* ------------bedding------------ */
+main .rental .rental_item .bedding{
+  height: auto;
+}
+
+main .rental .rental_item .bedding .bedding_box{
+  height: 180px;
+}
+/* ----------------------------------------- */
+
+main .rental .rental_item .link_fee a{
+  font-size: 20px}
+
+
+/* --------------------sale-------------------- */
+
+main .sale .sale_item .box{
+  width: 45%;
+  height: 170px;
+  margin-bottom: 15px;
+}
+
+
+main .sale .sale_item{
+height:auto;
+}
+
+main .sale .sale_item .box p{
+  font-size: 12px;
+  line-height: 15px;
+}
+
+main .sale .sale_item .box img{
+  height: 60%;
+  width: 80%;
+} 
+
+}
+
+

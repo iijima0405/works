@@ -1,0 +1,303 @@
+@charset"utf-8";
+
+header .h_nav ul li:nth-child(4){
+    color: #F0E6BC;
+}
+
+header .h_nav ul li:nth-child(4):before{
+  content: '';
+  display: inline-block;
+  width: 60px;  
+  height: 60px;
+  background-image: url(../images/common/nav_fam_first.png);
+  background-size: contain;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 600px;
+}
+
+header .h_nav ul li:nth-child(4)::after{
+    content: '';
+    display: inline-block;
+    width: 60px;  
+    height: 60px;
+    background-image: url(../images/common/nav_fam_last.png);
+    background-size: contain;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    position: absolute;
+} 
+
+main section h2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* --------------------------map-------------------------- */
+
+main .map{
+  background-image: url(../images/access/car_fam.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 10% 7%;
+  padding-bottom: 100px;
+}
+
+main .map .google_map{
+  margin-top: 50px;
+  background-color:  rgba(219,205,29,0.5);
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+  border-radius: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  height: 500px;
+}
+
+main .map p iframe{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main section address{
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+/* --------------access-------------- */
+
+main .map .access{
+  margin-top: 50px;
+  background-color:  rgba(219,205,29,0.5);
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+  border-radius: 30px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+main .map .access .direction{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 700px;
+}
+
+main .map .access .direction .box{
+  text-align: center;
+  height: 47%;
+  width: 45%;
+  background-color: #fff;
+  opacity: 0.7;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+main .map .access .direction .box .photo{
+  height: 20%;
+  width: 20%;
+  margin:5px auto 0;
+  
+}
+
+main .map .access .direction .box .illust{
+  height: 62%;
+  width: 60%;
+  margin:5px auto;
+}
+
+/* -------------------neighbor------------------- */
+main .neighbor{
+  background-image: url(../images/access/spring_fam.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 50px;
+}
+
+main .neighbor .neighbor_item{
+  margin-top: 50px;
+  background-color:  rgba(219,205,29,0.5);
+width: 900px;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 100px;
+border-radius: 30px;
+padding-bottom: 10px;
+padding-top: 20px;
+justify-content: space-around;
+}
+
+main .neighbor .neighbor_item .box{
+  text-align: center;
+  height: 650px;
+  width: 30%;
+  background-color: #fff;
+  opacity: 0.7;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+main .neighbor .neighbor_item .box h3{
+  font-size: 25px;
+}
+
+main .neighbor .neighbor_item .box .box_content h4{
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+main .neighbor .neighbor_item .box .box_content .text{
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+main .neighbor .neighbor_item .box .box_content{
+  height: 40%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+main .neighbor .neighbor_item .box .box_content img{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 30%;
+  width: 65%;
+}
+
+main .neighbor .neighbor_item .box .box_content img{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 30%;
+  width: 65%;}
+
+
+
+
+
+
+/* -------------------------レスポンシブ------------------------- */
+
+@media screen and (max-width:640px){
+
+/* ------------------------width------------------------ */
+
+main .map .google_map,
+main .map .access,
+main .neighbor .facility{
+  width:90%;
+}
+
+
+/* ----------------------map------------------------- */
+
+main section address{
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+main .map{
+  background-size: 35% 7%;
+}
+ 
+
+/* --------------access-------------- */
+
+main .map .access .direction{
+  height: auto;
+}
+
+main .map .access .direction .box{
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 90%;
+}
+
+main .map .access .direction .box h3{
+  font-size: 15px;
+}
+main .map .access .direction .box p{
+font-size: 10px;
+}
+
+main .map .access .direction .box .photo{
+ display: none;
+}
+
+main .map .access .direction .box .illust{
+  height: 80%;
+  width: 80%;
+}
+
+
+/* -------------------neighbor------------------- */
+
+main .neighbor .facility h3{
+text-align: center;
+font-size: 15px;
+}
+
+main .neighbor .neighbor_item .box .box_content{
+  margin-top: 0;
+}
+
+main .neighbor .neighbor_item .box .box_content h4{
+  font-size: 20px;
+}
+
+main .neighbor .neighbor_item .box .box_content .text{
+  width: 80%;
+  font-size: 12px;
+  
+}
+
+main .neighbor .neighbor_item{
+  background-color:  rgba(219,205,29,0.5);
+width: 90%;
+}
+
+main .neighbor .neighbor_item .box{
+  margin-left: auto;
+  margin-right: auto;
+  height: 30%;
+  width: 80%;
+  background-color: #fff;
+}
+
+main .neighbor .neighbor_item .box .box_content img{
+  width: 90%;
+}
+
+main form .check_button{
+  width: 50%;
+  text-align: center;
+}
+
+main form .check_button p{
+  width: 50%;
+}
+
+main form .check{
+  height: 50px;
+  font-size: 20px;
+
+}
+
+
+}
