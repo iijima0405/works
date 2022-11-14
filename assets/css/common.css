@@ -171,15 +171,6 @@ header .fat-nav {
 
 header button {
     display: none;
-    background-image: url(../images/common/ham_open.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: transparent;
-    height: 30%;
-    width: 20%;
-    background-color: transparent;
-    border: none;
-
 }
 
 #ham_nav {
@@ -196,19 +187,19 @@ header button {
     background-image: url(../images/common/ham_close.png);
     position: absolute;
     top: 5%;
-    left: 80%;
-    height: 5%;
-    width: 15%;
+    left: 70%;
+    height: 40%;
+    width: 20%;
 }
 
 #ham_nav ul {
-    margin-top: 20%;
+    margin-top: 30%;
     text-align: center;
 }
 
 #ham_nav ul li {
     font-size: 27px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 #ham_nav ul li a {
@@ -483,15 +474,12 @@ footer .f_title .f_logo {
     /* --------------------header-------------------- */
     header {
         opacity: 0.7;
-        height: 10%;
         text-align: left;
         padding-right: auto;
         padding-left: auto;
-        justify-content: space-around;
     }
 
     header .h_logo {
-        background-image: url(../images/common/logo.png);
         height: 30%;
         width: 40%;
         background-size: contain;
@@ -499,16 +487,8 @@ footer .f_title .f_logo {
         padding-top: auto;
         font-size: 20px;
         text-align: center;
-        transition: 0.5s;
-        margin-left: 0;
-    }
-
-    header .h_logo a {
-        display: none;
-    }
-
-    header .h_logo:hover {
-        display: none;
+        margin-left: 30px;
+        margin-top: 20px;
     }
 
     header .h_logo::after {
@@ -518,14 +498,27 @@ footer .f_title .f_logo {
         height: 1px;
         background-color: black;
         position: absolute;
-        top: 40%;
+        top: 35px;
         left: 100%;
     }
 
+
+
+    header .h_logo a {
+        display: none;
+    }
+
+    header .h_logo:hover {
+        display: none;
+    }
+
+    
+
     header>p {
         display: block;
-        font-size: 5px;
-        margin-top: 50px;
+        font-size: 20px;
+        margin-top: 70px;
+        margin-left: 250px;
     }
 
     header .fat-nav {
@@ -537,10 +530,18 @@ footer .f_title .f_logo {
 
     /* ------メニュー表示時、非表示------ */
     header button {
+        background-image: url(../images/common/ham_open.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: transparent;
+        height: 40%;
+        width: 20%;
+        background-color: transparent;
+        border: none;    
         display: block;
         position: absolute;
-        top: 20%;
-        left: 80%;
+        top: 10%;
+        left: 70%;
     }
 
 
@@ -555,7 +556,6 @@ footer .f_title .f_logo {
 
     .mainvisual {
         position: relative;
-        top: 90px;
         margin-right: auto;
         margin-left: auto;
         height: 1000%;
