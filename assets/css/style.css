@@ -422,7 +422,7 @@ main .content .content_button{
 }
 
 main .content .content_button:hover{
- display: none;
+  transform:none;
 } 
 
   
@@ -492,7 +492,7 @@ main article{
    }
 
    main article .news_title .bt_twitter:hover{
-    display: none;
+    margin-top: 20px;
   }
 
   main article .news_title .bt_instagram{
@@ -501,7 +501,7 @@ main article{
   }
 
   main article .news_title .bt_instagram:hover{
-    display: none;
+    margin-top: 20px;
   } 
 
 
