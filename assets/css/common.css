@@ -273,6 +273,8 @@ header .h_nav ul li:first-child::after{
 
 .mainvisual .mainv_title h1 {
     text-align: center;
+    height: 50%;
+    line-height: 70px;
 }
 
 

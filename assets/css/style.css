@@ -20,9 +20,12 @@
 
 .mainvisual .mainv_title h1{
   border-bottom: black 1px solid;
+  height: 50%;
+  line-height: 60px;
 }
 .mainvisual .mainv_title h1, .mainvisual .mainv_title h2{
   text-align: center;
+  line-height: 60px;
 }
 
 /* -------------greeting------------- */
